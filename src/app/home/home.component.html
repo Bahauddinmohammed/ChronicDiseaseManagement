@@ -10,7 +10,7 @@
         <!-- navbar links -->
         <div class="nav-links col-12 p-0">
             <div class="navbar">
-                <a href="#home">Home</a>
+                <a href="#" routerLink="/register">Register</a>
                 <a href="#services">Health Topics</a>
                 <a href="#about">Resources</a>
                 <a href="#contact">About Us</a>
@@ -38,8 +38,8 @@
 
             <!-- featured health topics cards -->
             <div class="featured-cards row">
-                <div class="card col-md-4" *ngFor="let item of cardDetails" style="width: 18rem;">
-                    <div class="card-body p-4">
+                <div class="card col-md-4" *ngFor="let item of cardDetails">
+                    <div class="card-body text-start">
                         <h5 class="card-title">{{ item.title }}</h5>
                         <p class="card-text">{{ item.subtitle }}</p>
                         <a href="#" class="btn btn-primary">{{ item.btntext }}</a>
