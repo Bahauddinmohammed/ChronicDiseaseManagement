@@ -1,0 +1,42 @@
+.title{
+    font-size: 25px;
+}
+.top-box{
+    background-color: grey;
+}
+.bottom-box{
+    padding:10%;
+}
+.health-text{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.navbar{
+    background-color: rgb(95, 95, 93);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar a{
+    margin:15px;
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.footer-box{
+    background-color: rgb(247, 247, 247);
+    color:black;
+    padding-bottom: 20%;
+}
+.health-title-text{
+    font-size:20px;
+    font-weight: bold;
+    color: rgb(51, 50, 50);
+    text-align: start;
+    margin-top:20px;
+}
+.health-topics-box{
+    position:relative;
+    bottom: 45%;
+}
+
