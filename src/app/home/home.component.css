@@ -5,7 +5,7 @@
     background-color: grey;
 }
 .bottom-box{
-    padding:10%;
+    padding:5%;
 }
 .health-text{
     font-size: 30px;
@@ -26,7 +26,6 @@
 .footer-box{
     background-color: rgb(247, 247, 247);
     color:black;
-    padding-bottom: 20%;
 }
 .health-title-text{
     font-size:20px;
@@ -37,10 +36,10 @@
 }
 .health-topics-box{
     position:relative;
-    bottom: 45%;
+    bottom: 10%;
 }
 .featured-cards{
-    margin: 0 2px 0px 2px;
+    margin: 10px 2px 0px 2px;
     display: flex;
     justify-content: space-between;
 }
