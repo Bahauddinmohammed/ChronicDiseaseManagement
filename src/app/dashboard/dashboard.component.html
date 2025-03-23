@@ -1,0 +1,40 @@
+<div class="wrapper">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <h2>Doctor Dashboard</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#" routerLink="/login">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <h1>Dashboard</h1>
+        </header>
+
+        <!-- Dashboard Content -->
+        <div class="p-4">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Patient Name</th>
+                        <th scope="col">Contact Number</th>
+                        <th scope="col">Health Issue</th>
+                        <th scope="col">Recently Visited Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let patient of patientData">
+                        <th scope="row">{{patient.patientName}}</th>
+                        <td>{{patient.contactNumber}}</td>
+                        <td>{{patient.healthIssue}}</td>
+                        <td>{{patient.recentlyVisitedTime}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
