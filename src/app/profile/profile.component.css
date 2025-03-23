@@ -1,17 +1,21 @@
 .form-Item-Name {   
-     font-family: 'Courier New, monospace';
-    font-size: 25px;
-    font-weight: 400;
+    font-family: 'Courier New, monospace';
+    font-size: 20px;
+    font-weight: 300;
     color: rosybrown;
     padding-bottom: 5px;
-    margin: 20px 100px;
+    margin: 20px 20px 20px 100px;
+    flex: 30%;
 }
 
 .form-Item-data {
     font-family: 'Arial, sans-serif';
-    font-size: 24px;
-    color: #333;
-    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    padding-bottom: 5px;
+    margin: 20px;
+    flex: 75%;
 }
 /* Header style */
 .header {
@@ -21,4 +25,7 @@
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
+}
+.form-group-data{
+    display: flex;
 }
