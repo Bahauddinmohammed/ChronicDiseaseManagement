@@ -1,0 +1,10 @@
+<nav class="navbar">
+    <ul class="navbar-links">
+      <li *ngFor="let data of navList">
+        <a routerLink="{{data.route}}">
+        {{data.name}}</a></li>
+    </ul>
+    <div class="navbar-actions">
+      <!-- Add login/logout buttons or user-related actions here -->
+    </div>
+  </nav>

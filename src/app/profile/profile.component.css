@@ -1,0 +1,19 @@
+.form-Item-Name {   
+     font-family: 'Courier New, monospace';
+    font-size: 25px;
+    font-weight: 400;
+    color: brown;
+    padding-bottom: 5px;
+    margin: 20px 100px;
+}
+
+.form-Item-data {
+    font-family: 'Arial, sans-serif';
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+}
+.heading{
+    color: #333333;
+    align-content: center;
+}
