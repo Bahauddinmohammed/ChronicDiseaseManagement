@@ -1,18 +1,12 @@
-<div class="wrapper">
-    <!-- Sidebar -->
-    <nav class="sidebar">
-        <h2>Doctor Dashboard</h2>
-        <ul>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#" routerLink="/login">Logout</a></li>
-        </ul>
-    </nav>
+<app-navbar></app-navbar>
+
+<div class="">
 
     <!-- Main Content -->
-    <div class="main-content">
+    <div class="">
         <!-- Header -->
         <header class="header">
-            <h1>Dashboard</h1>
+            <h1>Patients List</h1>
         </header>
 
         <!-- Dashboard Content -->
@@ -24,6 +18,7 @@
                         <th scope="col">Contact Number</th>
                         <th scope="col">Health Issue</th>
                         <th scope="col">Recently Visited Time</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,6 +27,8 @@
                         <td>{{patient.contactNumber}}</td>
                         <td>{{patient.healthIssue}}</td>
                         <td>{{patient.recentlyVisitedTime}}</td>
+                        <td> <a routerLink="/profile">details</a>
+                        </td>
                     </tr>
                 </tbody>
             </table>

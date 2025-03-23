@@ -11,7 +11,15 @@ export class ProfileComponent implements OnInit  {
 
   }
   header:any;
-  details:any={name:'John',phone:'+91 767 890 7890',email:'test@gmail.com'};
+
+  details:any={
+    
+    patientName: 'Larry the Bird',
+    contactNumber: '(555) 111-2222',
+    healthIssue: 'Headache',
+    recentlyVisitedTime: '2025-03-22 09:00 AM',
+    email:'test@gmail.com'
+  };
 
 ngOnInit(): void {
   this.header = 'Patient Details';

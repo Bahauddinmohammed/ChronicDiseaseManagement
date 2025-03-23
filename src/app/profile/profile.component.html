@@ -1,17 +1,28 @@
+<app-navbar></app-navbar>
+
 <div class="form-container">
-    <h1 class="heading">{{header}}</h1>
+    <header _ngcontent-gkt-c4="" class="header">
+        <h1 _ngcontent-gkt-c4="">{{header}}</h1></header>
     <form>
         <div class="form-group">
             <label  class="form-Item-Name" for="name">Name:</label>
-            <label class="form-Item-data" >{{details.name}}</label> 
+            <label class="form-Item-data" >{{details.patientName}}</label> 
+        </div>
+        <div class="form-group">
+            <label class="form-Item-Name" for="email">Health Issue:</label> 
+            <label class="form-Item-data" >{{details.healthIssue}}</label> 
+        </div>
+        <div class="form-group">
+            <label  class="form-Item-Name" for="phone">Contact Number:</label>
+            <label class="form-Item-data" >{{details.contactNumber}}</label> 
         </div>
         <div class="form-group">
             <label class="form-Item-Name" for="email">Email:</label> 
             <label class="form-Item-data" >{{details.email}}</label> 
         </div>
         <div class="form-group">
-            <label  class="form-Item-Name" for="phone">Phone:</label>
-            <label class="form-Item-data" >{{details.phone}}</label> 
+            <label  class="form-Item-Name" for="phone">Recently Visited:</label>
+            <label class="form-Item-data" >{{details.recentlyVisitedTime}}</label> 
         </div>
     </form>
 </div>

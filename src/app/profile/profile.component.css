@@ -2,7 +2,7 @@
      font-family: 'Courier New, monospace';
     font-size: 25px;
     font-weight: 400;
-    color: brown;
+    color: rosybrown;
     padding-bottom: 5px;
     margin: 20px 100px;
 }
@@ -13,7 +13,12 @@
     color: #333;
     margin: 10px 0;
 }
-.heading{
-    color: #333333;
-    align-content: center;
+/* Header style */
+.header {
+    background-color: #4CAF50;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
