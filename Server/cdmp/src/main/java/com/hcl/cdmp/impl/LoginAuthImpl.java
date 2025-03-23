@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.hcl.cdmp.api.LoginAuth;
 import com.hcl.cdmp.entity.UserDetails;
+import com.hcl.cdmp.model.AuthService;
 import com.hcl.cdmp.model.LoginRequest;
 import com.hcl.cdmp.model.RegistrationRequest;
 import com.hcl.cdmp.repo.UserRepository;
@@ -20,6 +21,9 @@ public class LoginAuthImpl implements LoginAuth {
 
 	@Autowired
 	private UserRepository userRepository;
+	
+	@Autowired
+	AuthService authService;
 
 	@Override
 	public GenericResponse registerUser(RegistrationRequest registrationRequest) {
@@ -62,6 +66,8 @@ public class LoginAuthImpl implements LoginAuth {
 			Optional<UserDetails> existingUserByEmail = userRepository.findByEmail(loginRequest.getEmail());
 			if (existingUserByEmail.isPresent()) {
 				if(existingUserByEmail.get().getPassword().equals(loginRequest.getPassword())){
+					String jwt = authService.generateJWT(loginRequest);
+					res.setJwtToken(jwt);
 					res.setStatusCode("SUCCESS");
 				}
 						
